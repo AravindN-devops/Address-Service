@@ -17,15 +17,18 @@ public class Address {
 	private String city;
 	
 	private String pincode;
+	
+	private int employeeId;
 
 	public Address() {
 	}
 
-	public Address(int id, String street, String city, String pincode) {
+	public Address(int id, String street, String city, String pincode,int employeeId) {
 		this.id = id;
 		this.street = street;
 		this.city = city;
 		this.pincode = pincode;
+		this.employeeId=employeeId;
 	}
 
 	public int getId() {
@@ -59,5 +62,15 @@ public class Address {
 	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	
+	
 	
 }
