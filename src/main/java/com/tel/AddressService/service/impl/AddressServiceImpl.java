@@ -21,7 +21,8 @@ public class AddressServiceImpl implements AddressService{
 	@Override
 	public AddressDTO getAddress(int id) {
 		System.out.println("port");
-		Address address = addressRepo.findAddressByEmployeeId(id);
+//		Address address = addressRepo.findAddressByEmployeeId(id);
+		Address address = addressRepo.findByEmployeeId(id);
 		AddressDTO addressDTO = modelMapper.map(address, AddressDTO.class);
 		return addressDTO;
 		
